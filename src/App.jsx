@@ -20,6 +20,10 @@ function App() {
     }
   };
 
+  const handleClear = () => {
+    setBinaryCode("");
+  };
+
   return (
     <main className="app-shell">
       <section className="converter-card">
@@ -29,17 +33,22 @@ function App() {
         <label className="label" htmlFor="binary-code-input">
           Enter binary code (0 or 1)
         </label>
-        <input
-          id="binary-code-input"
-          className="binary-input"
-          type="text"
-          value={binaryCode}
-          onChange={handleBinaryChange}
-          maxLength={8}
-          inputMode="numeric"
-          autoComplete="off"
-          spellCheck="false"
-        />
+        <div className="input-row">
+          <input
+            id="binary-code-input"
+            className="binary-input"
+            type="text"
+            value={binaryCode}
+            onChange={handleBinaryChange}
+            maxLength={8}
+            inputMode="numeric"
+            autoComplete="off"
+            spellCheck="false"
+          />
+          <button className="clear-button" type="button" onClick={handleClear}>
+            Clear
+          </button>
+        </div>
 
         <p className="bit-count">Bits: {binaryCode.length}</p>
 
