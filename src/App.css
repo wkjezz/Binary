@@ -1,0 +1,87 @@
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.converter-card {
+  width: min(1000px, 100%);
+  background: linear-gradient(145deg, #23272f 0%, #1b1f26 100%);
+  border: 1px solid #3f4654;
+  border-radius: 1.1rem;
+  padding: clamp(1.2rem, 3vw, 2.2rem);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.48), inset 0 0 0 1px rgba(57, 255, 20, 0.06);
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #39ff14;
+  opacity: 0.92;
+}
+
+h1 {
+  margin: 0.4rem 0 0.9rem;
+  font-size: clamp(2.1rem, 6vw, 4rem);
+  line-height: 1.02;
+  color: #39ff14;
+  text-shadow: 0 0 18px rgba(57, 255, 20, 0.38);
+}
+
+.label {
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  color: #9bf08a;
+}
+
+.binary-input {
+  width: 100%;
+  margin-top: 0.6rem;
+  padding: 0.85rem 1.05rem;
+  border-radius: 0.8rem;
+  border: 2px solid #39ff14;
+  background: #0f1218;
+  color: #39ff14;
+  font-size: clamp(1.35rem, 3.8vw, 2.8rem);
+  font-family: "Courier New", Courier, monospace;
+  outline: none;
+  text-align: center;
+}
+
+.binary-input:focus {
+  box-shadow: 0 0 0 3px rgba(57, 255, 20, 0.28);
+}
+
+.bit-count {
+  margin: 0.7rem 0 0;
+  font-size: 0.95rem;
+  color: #9bf08a;
+}
+
+.output-panel {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #4b515d;
+  border-radius: 0.8rem;
+  background: #11151c;
+  text-align: center;
+}
+
+.number-output {
+  margin: 0.55rem 0 0;
+  color: #39ff14;
+  font-weight: 800;
+  font-family: "Courier New", Courier, monospace;
+  font-size: clamp(4rem, 15vw, 11rem);
+  line-height: 0.95;
+  min-height: clamp(4rem, 15vw, 11rem);
+  display: grid;
+  place-items: center;
+  overflow-wrap: anywhere;
+}
