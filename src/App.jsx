@@ -27,13 +27,10 @@ function App() {
   return (
     <main className="app-shell">
       <section className="converter-card">
-        <p className="eyebrow">Binary Converter</p>
-        <h1>Code to Number</h1>
-
-        <label className="label" htmlFor="binary-code-input">
-          Enter binary code (0 or 1)
-        </label>
-        <div className="input-row">
+        <div className="decode-row">
+          <label className="decode-label" htmlFor="binary-code-input">
+            Decode:
+          </label>
           <input
             id="binary-code-input"
             className="binary-input"
@@ -50,10 +47,8 @@ function App() {
           </button>
         </div>
 
-        <p className="bit-count">Bits: {binaryCode.length}</p>
-
         <section className="output-panel" aria-live="polite">
-          <p className="label">Number Output</p>
+          <p className="label">Solution</p>
           <p className="number-output">
             {binaryCode.length === 8 ? decimalValue : " "}
           </p>
